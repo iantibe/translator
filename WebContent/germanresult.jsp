@@ -69,12 +69,12 @@
 
     <div class="initialword">
         <h2>German Translation:</h2>
-        ${dataout.getWord()}
+       <h3> ${dataout.getWord()}</h3>
     </div>
 
     <div class="translate">
         <h2>Definition:</h2>
-        ${dataout.getDef()}
+        <h3>${dataout.getDef()}</h3>
     </div>
 </div>
 

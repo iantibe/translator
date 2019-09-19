@@ -28,6 +28,32 @@
 
         .result{
         background-color: green;
+        margin-top: 25px;
+        }
+        .initialword {
+        border-style: solid;
+                
+        }
+        .translate {
+        border-style: solid;
+        margin-top: 25px;
+        
+        }
+        .menu {
+        background-color: yellow;
+        border-radius: 25px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+      
+        }
+        
+        .menu a {
+        margin-left: 10px;
+        }
+         
+         a {
+        font-size: 25px;
         }
     </style>
 </head>
@@ -44,18 +70,20 @@
 
     <div class="initialword">
         <h2>Word to translate:</h2>
-        ${dataout.getInputWord()}<br />
+        <h3>${dataout.getInputWord()}</h3><br />
     </div>
 
     <div class="translate">
         <h2>Translation:</h2>
-        ${dataout.getOutputWord() }<br/>
+        <h3>${dataout.getOutputWord()}</h3><br/>
     </div>
-
-    <a href="toenglish.jsp">Return to Word Entry Page</a>
-    <a href="index.jsp">Return to main page</a>
+   
 </div>
 
+<div class = "menu">
+	 <a href="toenglish.jsp">Return to Word Entry Page</a>
+	 <a href="index.jsp">Return to main page</a>
+ </div>
 
 </body>
 </html>

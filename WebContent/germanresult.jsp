@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
     <style>
          img {
             width: 275px;
-            height 275px;
+            height: 275px;
         }
 
         header {
@@ -27,6 +28,30 @@
 
          .result{
         background-color: green;
+        margin-top: 25px;
+        }
+        .initialword {
+        border-style: solid;
+                
+        }
+        .translate {
+        border-style: solid;
+        margin-top: 25px;
+        
+        }
+        .menu {
+        background-color: yellow;
+        border-radius: 25px;
+        margin-top: 25px;
+         display: flex;
+        justify-content: center;
+        }
+        .menu a {
+        margin-left: 10px;
+        }
+        
+        a {
+        font-size: 25px;
         }
     </style>
 
@@ -43,15 +68,19 @@
 <div class="result">
 
     <div class="initialword">
-        <h2>Word to translate:</h2>
+        <h2>German Translation:</h2>
+        ${dataout.getWord()}
     </div>
 
     <div class="translate">
-        <h2>Translation:</h2>
+        <h2>Definition:</h2>
+        ${dataout.getDef()}
     </div>
+</div>
 
-    <a href="togerman.html">Return to Word Entry Page</a>
-    <a href="index.html">Return to main page</a>
+<div class="menu">
+	<a href="togerman.jsp">Return to Word Entry Page</a>
+    <a href="index.jsp">Return to main page</a>
 </div>
 </body>
 </html>

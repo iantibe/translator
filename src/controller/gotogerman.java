@@ -1,26 +1,25 @@
 package controller;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.TranslateToEnglish;
+import model.TranslateToGerman;
 
 /**
- * Servlet implementation class gotoenglish
+ * Servlet implementation class gotogerman
  */
-@WebServlet("/gotoenglish")
-public class gotoenglish extends HttpServlet {
+@WebServlet("/gotogerman")
+public class gotogerman extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public gotoenglish() {
+    public gotogerman() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,12 +36,10 @@ public class gotoenglish extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String word = request.getParameter("germanword");
-		TranslateToEnglish translator = new TranslateToEnglish(word);
-		request.setAttribute("dataout", translator);
-		getServletContext().getRequestDispatcher("/englishresult.jsp").forward(request, response);
-		
-		
+		String word = request.getParameter("togerman");
+		TranslateToGerman output = new TranslateToGerman(word);
+		request.setAttribute("dataout", output);
+		getServletContext().getRequestDispatcher("/germanresult.jsp").forward(request, response);
 		
 		
 	}

@@ -24,6 +24,25 @@
         header img {
             margin-left: 25px;
         }
+         
+         .menu {
+        background-color: yellow;
+        border-radius: 25px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        
+        }
+        .instructions {
+        margin-top: 25px;
+        }
+         a {
+        font-size: 25px;
+        }
+         select {
+        width: 300px;
+        height: 30px;
+        }
 
 </style>
 
@@ -47,10 +66,12 @@
             <option value="weichei">Weichei</option>
             <option value="bananenbieger">Bananenbieger</option>
         </select>
-        <input type="submit" value="translateenglish">
+        <input type="submit" value="Submit">
     </form>
     
 </div>
-<a href="index.jsp">Return to Main Page</a>
+<div class="menu">
+	<a href="index.jsp">Return to Main Page</a>
+	</div>
 </body>
 </html>

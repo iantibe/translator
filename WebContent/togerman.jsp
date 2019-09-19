@@ -28,6 +28,25 @@
         .instructions {
             margin-left: 50px;
         }
+        .menu {
+        background-color: yellow;
+        border-radius: 25px;
+        margin-top: 25px;
+         display: flex;
+        justify-content: center;
+        }
+        
+        .instructions {
+        margin-top: 25px
+        }
+         a {
+        font-size: 25px;
+        }
+        
+        select {
+        width: 300px;
+        height: 30px;
+        }
 
     </style>
 </head>
@@ -45,17 +64,19 @@
 
     <form action="gotogerman" method="post">
         <select name="togerman">
-            <option value="1">Volvo</option>
-            <option value="2">Saab</option>
-            <option value="3">Fiat</option>
-            <option value="4">Audi</option>
-            <option value="4">Audi</option>
+            <option value="1">Grief Bacon</option>
+            <option value="2">Schnapps Idea</option>
+            <option value="3">Wire Donkey</option>
+            <option value="4">Soft Egg</option>
+            <option value="5">Banana Bender</option>
         </select>
         <input type="submit" value="Submit">
     </form>
-
-    
+   
 </div>
+
+<div class="menu">
 	<a href="index.jsp">Return to Main Page</a>
+	</div>
 </body>
 </html>

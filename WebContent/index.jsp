@@ -20,14 +20,7 @@
             background-image: url("germany.jpg");
             background-repeat: no-repeat;
         }
-
-        button{
-            width: 120px;
-            height: 100px;
-            background-color: red;
-            margin-top: 30px;
-        }
-
+       
         header img {
             margin-left: 25px;
         }
@@ -36,6 +29,13 @@
             display: flex;
             flex-direction: column;
             margin-left: 10%;
+        }
+         a {
+        font-size: 25px;
+        }
+         select {
+        width: 300px;
+        height: 30px;
         }
     </style>
 </head>
@@ -54,11 +54,8 @@
         </div>
 
         <div class="buttonbox">
-            
             <a href="togerman.jsp">English to German</a>
-                        
-             <a href="toenglish.jsp">German To English</a>
-            
+            <a href="toenglish.jsp">German To English</a>
         </div>
     </div>
 </body>
